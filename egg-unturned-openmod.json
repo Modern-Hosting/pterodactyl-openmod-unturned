@@ -30,7 +30,7 @@
             "default_value": "24",
             "user_viewable": 1,
             "user_editable": 0,
-            "rules": "required|integer|between:1,24"
+            "rules": "required|integer|between:1,100"
         },
         {
             "name": "OpenMod Auto Update",
