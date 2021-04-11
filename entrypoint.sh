@@ -12,7 +12,8 @@ if [ "${OPENMOD_AUTOUPDATE}" == "1" ]; then
 	unzip -o -q OpenMod.Unturned.Module*.zip -d Modules && rm OpenMod.Unturned.Module*.zip
 fi
 
-cp -f linux64/steamclient.so Unturned_Headless_Data/Plugins/x86_64/steamclient.so
+mkdir -p Unturned_Headless_Data/Plugins/x86_64
+cp -f steam/linux64/steamclient.so Unturned_Headless_Data/Plugins/x86_64/steamclient.so
 
 ulimit -n 2048
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/Unturned_Headless_Data/Plugins/x86_64/
